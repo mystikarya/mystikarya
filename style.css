@@ -107,7 +107,7 @@ body {
     opacity: 0.88;
 
     filter:
-        brightness(0.72)
+        brightness(0.90)
         contrast(1.05)
         saturate(0.7);
 }
@@ -1472,8 +1472,7 @@ body {
     background:
         rgba(0, 0, 0, 0.22);
 
-    backdrop-filter:
-        blur(4px);
+
 
     text-decoration: none;
 
@@ -2082,10 +2081,7 @@ body {
 
     background: rgba(0, 0, 0, 0.92);
 
-    border-top:
-        1px solid
-        rgba(228, 205, 143, 0.10);
-
+    
     text-align: center;
 }
 
