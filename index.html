@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MystikArya</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/mystikaryalogo.png">
+</head>
+
+<body>
+
+  <!-- ============================== SFONDO FUMO =============================== -->
+
+  <div class="smoke-background">
+
+    <video
+      class="bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
+      <source src="assets/smoke.mp4" type="video/mp4">
+    </video>
+
+    <div class="smoke-atmosphere"></div>
+    <div class="smoke-vignette"></div>
+
+  </div>
+
+
+  <!-- ============================== CONTENUTO =============================== -->
+
+  <main class="page">
+
+
+    <!-- ========================== HERO =========================== -->
+
+    <section class="hero">
+
+      <div class="intro">
+
+        <h1 class="brand">
+          MystikArya
+        </h1>
+
+        <p class="subtitle">
+          Rituali<br>
+          Legamenti<br>
+          Cartomanzia<br>
+          Matrice del Destino
+        </p>
+
+        <!-- ====================== ESPLORA ======================= -->
+
+        <button
+          class="explore"
+          type="button"
+          aria-label="Esplora Cartomanzia"
+          onclick="document.getElementById('cartomanzia').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <span class="explore-label">
+            Esplora
+          </span>
+
+          <span
+            class="explore-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================== CARTOMANZIA =========================== -->
+
+    <section
+      id="cartomanzia"
+      class="section-cartomanzia"
+      style="--bg: url('assets/bg-cartomanzia.png')"
+    >
+
+      <!-- ====================== CONTENUTO ====================== -->
+
+      <div class="cartomanzia-content">
+
+        <h2 class="cartomanzia-title">
+          Cartomanzia
+        </h2>
+
+
+        <!-- ====================== PACCHETTI ====================== -->
+
+        <div class="cartomanzia-packages">
+
+
+          <!-- INTRO PACCHETTI -->
+
+          <div class="packages-intro">
+
+            <p class="packages-description">
+              Il consulto si svolge in chiamata, o se preferisci in audio WhatsApp.            </p>
+
+          </div>
+
+
+          <!-- ====================== PACCHETTI STANDARD ====================== -->
+
+          <div class="packages-grid">
+
+
+            <!-- BASE -->
+
+            <article class="package-card">
+
+              <div class="package-stars">
+                ⭐
+              </div>
+
+              <h3 class="package-name">
+                Base
+              </h3>
+
+              <p class="package-duration">
+                20 minuti
+              </p>
+
+              <p class="package-details">
+                Consulto con i Tarocchi classico. Nessun limite di domande.
+              </p>
+              <div class="package-price">
+                30€
+              </div>
+
+
+            </article>
+
+
+            <!-- PLUS -->
+
+            <article class="package-card">
+
+              <div class="package-stars">
+                ⭐⭐
+              </div>
+
+              <h3 class="package-name">
+                Plus
+              </h3>
+
+              <p class="package-duration">
+                30 minuti
+              </p>
+ <p class="package-details">
+                Stesa più approfondita, in cui si utilizzano sia i Tarocchi che gli Oracoli.
+              </p>
+              <div class="package-price">
+                40€
+              </div>
+
+            </article>
+
+
+            <!-- PLUS + -->
+
+            <article class="package-card">
+
+              <div class="package-stars">
+                ⭐⭐⭐
+              </div>
+
+              <h3 class="package-name">
+                Plus + Canalizzazione
+              </h3>
+
+              <p class="package-duration">
+                30 minuti
+              </p>
+ <p class="package-details">
+*In questo consulto leggo i tarocchi e canalizzo il pensiero della tua Persona Specifica, è
+una vera e propria lettura del pensiero.              </p>
+              <div class="package-price">
+                50€
+              </div>
+
+
+            </article>
+
+            <!-- Avanzato -->
+
+           <article class="package-card">
+
+              <div class="package-stars">
+                🔥
+              </div>
+
+              <h3 class="package-name">
+                Avanzato: CARTOMANZIA + MATRICE DEL DESTINO
+              </h3>
+
+              <p class="package-duration">
+                30 minuti + analisi registrata
+              </p>
+ <p class="package-details">
+*In questo consulto avanzato utilizzo i tarocchi e la Matrice del Destino per valutare se
+siete anime gemelle, fiamme gemelle, o rapporto karmico.              </p>
+              <div class="package-price">
+                120€
+              </div>
+
+
+
+            </article>
+
+              <button
+                class="package-button"
+                type="button"
+                onclick="window.open('https://wa.me/393489224252', '_blank')"
+              >
+                Richiedi un consulto
+              </button>
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+    <section id="metodo" class="section-metodo">
+
+  <div class="metodo-content">
+
+    <div class="metodo-heading">
+
+      <span class="metodo-eyebrow">
+        ✦ IL MIO METODO ✦
+      </span>
+
+      <h2 class="metodo-title">
+        Trasforma<br>
+        <em>te stesso.</em>
+      </h2>
+
+    </div>
+
+
+    <div class="metodo-slider">
+
+      <article class="metodo-slide active">
+
+        <span class="metodo-number">
+          01
+        </span>
+
+        <p>
+          Sono operatrice esoterica con oltre 15 anni di esperienza,
+          specializzata in <strong>Cartomanzia evolutiva</strong>,
+          Legge dell’Attrazione, Ritorni di Ex e Ritualistica simbolica.
+        </p>
+
+      </article>
+
+
+      <article class="metodo-slide">
+
+        <span class="metodo-number">
+          02
+        </span>
+
+        <p>
+          Il mio metodo parte da un principio fondamentale:
+          <strong>trasformare te</strong>, portandoti verso la versione
+          di te capace di accedere alla
+          <strong>realtà che desideri</strong>.
+        </p>
+
+      </article>
+
+
+      <article class="metodo-slide">
+
+        <span class="metodo-number">
+          03
+        </span>
+
+        <p>
+          Spesso un rituale viene eseguito da un operatore e poi vieni
+          <strong>lasciata senza una reale guida</strong>.
+          Con me è diverso: ogni percorso comprende
+          <strong>video mentoring</strong> sulla Legge dell’Attrazione.
+        </p>
+
+      </article>
+
+
+      <article class="metodo-slide">
+
+        <span class="metodo-number">
+          04
+        </span>
+
+        <p>
+          Oltre all’aiuto energetico, voglio darti la chiave di accesso
+          al tuo <strong>potere manifestante</strong>.
+          L’obiettivo non è creare dipendenza da un ritualista.
+        </p>
+
+      </article>
+
+
+      <article class="metodo-slide">
+
+        <span class="metodo-number">
+          05
+        </span>
+
+        <p class="metodo-final">
+          Non un rituale standard.<br>
+          <strong>Un percorso di evoluzione completo.</strong>
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <div class="metodo-navigation">
+
+      <button
+        class="metodo-arrow metodo-prev"
+        type="button"
+        aria-label="Testo precedente">
+        ←
+      </button>
+
+
+      <div class="metodo-progress">
+
+        <span class="metodo-current">
+          01
+        </span>
+
+        <span class="metodo-line"></span>
+
+        <span>
+          05
+        </span>
+
+      </div>
+
+
+      <button
+        class="metodo-arrow metodo-next"
+        type="button"
+        aria-label="Testo successivo">
+        →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================== RITUALI =========================== -->
+
+<section id="rituali" class="section-rituali">
+
+    <!-- INTRO -->
+    <div class="rituali-intro">
+
+        <h2 class="rituali-title">
+            Percorsi Base
+        </h2>
+
+        <p class="rituali-note">
+          ✦ Tutti i percorsi includono Subliminali di riprogrammazione e
+            Video Mentoring sulla Legge dell'Attrazione, per un cammino
+            di trasformazione spirituale completo ✦
+        </p>
+
+    </div>
+
+
+    <!-- RITUALI -->
+    <div class="rituali-items">
+
+
+        <!-- AMORE -->
+
+        <article class="rituale-item" style="--bg: url('assets/bg-amore.png')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    AMORE
+                </h3>
+
+                <p class="rituale-description">
+                    Il Rituale di Amore è una pratica esoterica, energetica e simbolica
+orientata alla manifestazione dell’energia pura del sentimento di amore.
+                </p>
+
+                <div class="rituale-price">
+                    92€
+                </div>
+
+                <a href="amore.html" class="rituale-button">
+                    <span>LEGGI DI PIÙ</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- RITORNO EX -->
+
+        <article class="rituale-item" style="--bg: url('assets/bg-ritorno.png')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Ritorno Ex
+                </h3>
+
+                <p class="rituale-description">
+                    Il Rituale di Ritorno è un lavoro di riallineamento in una situazione di
+allontanamento, finalizzato alla riconciliazione con la persona specifica.
+                </p>
+
+                <div class="rituale-price">
+                    92€
+                </div>
+
+                <a href="ritorno.html" class="rituale-button">
+                    <span>LEGGI DI PIÙ</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- OSSESSIONE -->
+
+        <article class="rituale-item" style="--bg: url('assets/bg-ossessione.png')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Ossessione
+                </h3>
+
+                <p class="rituale-description">
+Il Rituale di Ossessione è una pratica esoterica, energetica e simbolica
+orientata all’intensificazione del desiderio e dell’impulso ossessivo.                </p>
+
+                <div class="rituale-price">
+                    92€
+                </div>
+
+                <a href="ossessione.html" class="rituale-button">
+                    <span>LEGGI DI PIÙ</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- PURIFICAZIONE -->
+
+        <article class="rituale-item" style="--bg: url('assets/bg-purificazione.png')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Purificazione
+                </h3>
+
+                <p class="rituale-description">
+                    Il Rituale di Purificazione è utilizzato per proteggere e rimuovere energie
+negative, blocchi personali e/o di coppia.
+                </p>
+
+                <div class="rituale-price">
+                    92€
+                </div>
+
+                <a href="purificazione.html" class="rituale-button">
+                    <span>LEGGI DI PIÙ</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+                <!-- ABBONDANZA -->
+
+        <article class="rituale-item" style="--bg: url('assets/bg-abbondanza.png')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Abbondanza
+                </h3>
+
+                <p class="rituale-description">
+                    Il Rituale è un calamita: vuole amplificare e manifestare opportunità
+connettendoti all’energia dell’abbondanza.
+                </p>
+
+                <div class="rituale-price">
+                    92€
+                </div>
+
+                <a href="abbondanza.html" class="rituale-button">
+                    <span>LEGGI DI PIÙ</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+<section id="cartomanzia" class="section-cartomanzia" style="--bg: url('assets/bg-cartomanzia.png')">
+
+  <div class="cartomanzia-content">
+
+    <h2 class="cartomanzia-title">
+      PROMO
+      Pacchetto completo
+    </h2>
+
+    <div class="packages-grid">
+
+      <article class="package-card">
+
+        <h3 class="package-name">
+          TAROCCHI &amp; ORACOLI 🔮
+          <br>
+          + RITUALE PERSONALIZZATO 🔥
+        </h3>
+
+        <p class="package-details">
+          Attraverso la lettura dei Tarocchi e gli Oracoli
+          analizzerò nel dettaglio la tua situazione e
+          sceglieremo insieme il rituale personalizzato per te.
+        </p>
+
+        <div class="package-price">
+          170€
+        </div>
+
+        <button
+      class="package-button"
+      type="button"
+      onclick="window.open('https://wa.me/393489224252', '_blank')"
+    >
+      Richiedi
+    </button>
+
+      </article>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+<section id="rituali2" class="section-rituali">
+
+    <!-- INTRO -->
+    <div class="rituali-intro">
+
+        <h2 class="rituali-title">
+            Percorsi Premium
+        </h2>
+
+    </div>
+
+
+    <!-- RITUALI -->
+    <div class="rituali-items">
+
+
+        <article class="rituale-item" style="--bg: url('assets/bg-legamento-amore.jpg')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Legamento di Amore Eterno
+                </h3>
+
+                <a href="https://wa.me/393489224252" target="_blank" rel="noopener" class="rituale-button">
+                    <span>INFO IN PRIVATO</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+                <article class="rituale-item" style="--bg: url('assets/bg-legamento-sesso.jpg')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Legamento di Sesso & Ossessione
+                </h3>
+
+                <a href="https://wa.me/393489224252" target="_blank" rel="noopener" class="rituale-button">
+                    <span>INFO IN PRIVATO</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+                <article class="rituale-item" style="--bg: url('assets/bg-vendetta.png')">
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Resa del Karma (Vendetta)
+                </h3>
+
+                <a href="https://wa.me/393489224252" target="_blank" rel="noopener" class="rituale-button">
+                    <span>INFO IN PRIVATO</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+                <article class="rituale-item rituale-item--sfondo-sito">
+
+            <video
+                class="rituale-item-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+            >
+                <source src="assets/smoke.mp4" type="video/mp4">
+            </video>
+
+            <div class="rituale-content">
+
+                <h3 class="rituale-name">
+                    Percorsi personalizzati
+                </h3>
+
+
+                <p class="rituale-description">
+                   Non trovi ciò che cerchi? Richiedi un Rituale personalizzato
+                </p>
+
+                <a href="https://wa.me/393489224252" target="_blank" rel="noopener" class="rituale-button">
+                    <span>INFO IN PRIVATO</span>
+                    <span class="rituale-arrow">→</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+
+    </div>
+
+</section>
+
+
+<!-- ========================== CORSO DI STREGONERIA =========================== -->
+
+<section id="corso" class="section-corso" style="--bg: url('assets/bg-corso.png')">
+
+    <div class="corso-content">
+
+        <h2 class="corso-title corso-fade">
+            Corso di Stregoneria
+        </h2>
+
+        <p class="corso-subtitle corso-fade">
+            <span class="corso-ornament">✦</span>
+            Risveglia il tuo potere
+            <span class="corso-ornament">✦</span>
+        </p>
+
+        <ul class="corso-list">
+
+            <li class="corso-item corso-fade">
+                <strong>10 video lezioni</strong> di teoria e pratica
+            </li>
+
+            <li class="corso-item corso-item--emphasis corso-fade">
+                <strong>6 potentissimi Rituali</strong> con Sigilli e video tutorial:
+                <span class="corso-item-sub">
+                    (Amore, Ossessione, Separazione, Protezione, Purificazione, Soldi)
+                </span>
+            </li>
+
+            <li class="corso-item corso-fade">
+                <strong>Grimorio della Strega</strong>: il tuo dizionario esoterico su
+                candele, erbe, pietre e ingredienti segreti
+            </li>
+
+            <li class="corso-item corso-fade">
+                <strong>Meditazioni</strong> guidate per il potenziamento dei rituali
+            </li>
+
+            <li class="corso-item corso-fade">
+                Accesso alla <strong>Community</strong> privata
+            </li>
+
+            <li class="corso-item corso-item--emphasis corso-fade">
+                <strong>Test finale con certificato</strong>
+            </li>
+
+        </ul>
+
+        <a
+            href="corsostregoneria.html"
+            class="rituale-button corso-button"
+        >
+            <span>SCOPRI DI PIÙ</span>
+            <span class="rituale-arrow">→</span>
+        </a>
+
+    </div>
+
+</section>
+
+  </main>
+
+
+  <!-- ============================== JAVASCRIPT =============================== -->
+
+  <script src="js/cartomanzia.js"></script>
+  <script src="js/metodo.js"></script>
+  <script src="js/rituali.js"></script>
+
+<footer class="site-footer">
+
+  <div class="footer-content">
+
+
+    <p class="footer-disclaimer">
+     *Il servizio offerto è di esclusiva natura esoterica, energetica e simbolica e viene prestato nell’ambito delle pratiche spirituali e dell’intrattenimento personale. Tutti i lavori proposti non sono finalizzati alla coercizione, al controllo o alla privazione della libertà di scelta di terze persone. Il servizio non costituisce né sostituisce consulenza o assistenza medica, psicologica, psicoterapeutica, legale, finanziaria o di altra natura professionale qualificata. Il servizio non comporta alcuna garanzia o promessa circa il conseguimento di uno specifico risultato, né circa il comportamento, le decisioni, le volontà o le azioni di soggetti terzi.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="termini.html" class="footer-link">
+        Termini e Condizioni
+      </a>
+
+    </div>
+
+    <div class="footer-copy">
+      © MystikArya
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
