@@ -260,7 +260,17 @@
     min-height: 100vh;
 
     display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+
+    background: #050403;
+}
+
+.cp-image-section picture {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .cp-image-full {
@@ -410,8 +420,13 @@
         font-size: 16px;
     }
 
+    .cp-image-section picture {
+        height: auto;
+    }
+
     .cp-image-full {
-        height: 70vh;
+        height: auto;
+        object-fit: contain;
     }
 
     .cp-price-tiers {
