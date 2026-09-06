@@ -85,6 +85,11 @@ body {
     font-family: 'IM Fell English', serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* =========================================================
    SFONDO FUMO
@@ -256,6 +261,56 @@ body {
 
 
 /* =========================================================
+   WHATSAPP HERO
+   Stesso trattamento dell'eyebrow di "Il Mio Metodo":
+   piccolo, spaziato, dorato tenue.
+   ========================================================= */
+
+.hero-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 28px;
+
+    font-family:
+        'Allrounder Monument',
+        sans-serif;
+
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+
+    color:
+        rgba(228, 205, 143, 0.55);
+
+    opacity: 0;
+
+    animation:
+        exploreFadeIn
+        1.8s
+        ease-out
+        forwards;
+
+    animation-delay: 0.5s;
+
+    transition:
+        color 0.5s ease;
+}
+
+.hero-whatsapp:hover {
+    color: var(--gold);
+}
+
+.hero-whatsapp-icon {
+    width: 13px;
+    height: 13px;
+
+    fill: currentColor;
+}
+
+
+/* =========================================================
    HERO ANIMATIONS
    ========================================================= */
 
@@ -383,9 +438,6 @@ body {
 
 /* =========================================================
    CARTOMANZIA
-   (blocco unico: prima c'erano due dichiarazioni duplicate
-   per le stesse classi, qui unificate mantenendo il risultato
-   visivo finale identico)
    ========================================================= */
 
 .section-cartomanzia {
@@ -413,9 +465,6 @@ body {
 
 /* =========================================================
    BACKGROUND + OVERLAY CARTOMANZIA (pseudo-elemento)
-   Stesso sfondo di prima (immagine leggermente sovradimensionata
-   per lasciare margine di movimento), ma senza nodi HTML:
-   il parallax è pilotato dal JS tramite --parallax-y.
    ========================================================= */
 
 .section-cartomanzia::before {
@@ -576,7 +625,6 @@ body {
 
 /* =========================================================
    CARD
-   TUTTE LE CARD HANNO ESATTAMENTE LO STESSO CSS
    ========================================================= */
 
 .package-card {
@@ -721,7 +769,6 @@ body {
 
 /* =========================================================
    PREZZO
-   SEMPRE IN FONDO
    ========================================================= */
 
 .package-price {
@@ -824,7 +871,6 @@ body {
     position: relative;
 
     width: 100%;
-    min-height: 100vh;
 
     display: flex;
     align-items: center;
@@ -1162,8 +1208,10 @@ body {
     margin: 0;
 
     font-family:
-        'Allrounder Monument';
-        letter-spacing: 0.18em;
+        'Allrounder Monument',
+        sans-serif;
+
+    letter-spacing: 0.18em;
 
     font-size:
         clamp(24px, 6vw, 24px);
@@ -1182,9 +1230,6 @@ body {
 
 /* =========================================================
    NOTA SOTTO IL TITOLO
-   Stessa famiglia/impostazione dell'eyebrow di "Il Mio
-   Metodo", ma con letter-spacing più leggero e un max-width
-   per restare leggibile su una frase intera.
    ========================================================= */
 
 .rituali-note {
@@ -1224,11 +1269,6 @@ body {
 
 /* =========================================================
    SINGOLA CARD RITUALE
-   Ogni card porta il proprio sfondo (var(--bg), impostata
-   inline nell'HTML) + overlay scuro sullo pseudo-elemento
-   ::before: niente div separati per bg/overlay, e il parallax
-   è pilotato dal JS tramite --parallax-y (stesso movimento
-   morbido di prima, solo senza nodo <img> dedicato).
    ========================================================= */
 
 .rituale-item {
@@ -1278,9 +1318,6 @@ body {
 
 /* =========================================================
    CARD "PERCORSI PERSONALIZZATI"
-   Sfondo reale: video smoke.mp4 (stesso file del fumo globale
-   del sito), con sopra lo stesso overlay scuro delle altre
-   card per garantire la leggibilità del testo.
    ========================================================= */
 
 .rituale-item--sfondo-sito .rituale-item-video {
@@ -1472,10 +1509,6 @@ body {
     background:
         rgba(0, 0, 0, 0.22);
 
-
-
-    text-decoration: none;
-
     font-family:
         'Allrounder Monument',
         sans-serif;
@@ -1577,10 +1610,6 @@ body {
 
 /* =========================================================
    CORSO DI STREGONERIA
-   Stessa struttura di .section-cartomanzia: sfondo + overlay
-   su pseudo-elemento, parallax via --parallax-y. Ogni riga
-   (titolo, sottotitolo, voci elenco, bottone) ha il proprio
-   fade-in scaglionato tramite --delay, impostato inline.
    ========================================================= */
 
 .section-corso {
@@ -1651,10 +1680,6 @@ body {
 
 /* =========================================================
    REVEAL LEGATO ALLO SCROLL
-   Opacity e scale sono pilotati dal JS in base alla posizione
-   di scroll di ciascun elemento (zoom-in + fade continuo).
-   La transition qui serve solo a smorzare i micro-scatti tra
-   un frame di scroll e l'altro, non è lei a fare il reveal.
    ========================================================= */
 
 .corso-fade {
@@ -1811,10 +1836,7 @@ body {
 
 
 /* =========================================================
-   BOTTONE
-   Stesso identico stile di .rituale-button (uguale a tutti
-   gli altri bottoni del sito), con in più lo stesso reveal
-   scroll-driven delle righe di testo.
+   BOTTONE CORSO
    ========================================================= */
 
 .corso-button {
@@ -1833,9 +1855,7 @@ body {
 
 
 /* =========================================================
-   PAGINE DI DETTAGLIO RITUALE (amore.html, ossessione.html, ...)
-   Layout minimo: quasi tutto il resto (bottone, prezzo, lista
-   con bullet, sfondo fumo) riusa classi già esistenti nel sito.
+   PAGINE DI DETTAGLIO RITUALE
    ========================================================= */
 
 .articolo-page {
@@ -2004,7 +2024,6 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
-    text-decoration: none;
 
     color: var(--gold-dim);
 
@@ -2081,7 +2100,6 @@ body {
 
     background: rgba(0, 0, 0, 0.92);
 
-    
     text-align: center;
 }
 
@@ -2145,8 +2163,6 @@ body {
     color:
         rgba(228, 205, 143, 0.50);
 
-    text-decoration: none;
-
     transition:
         color 0.4s ease;
 }
@@ -2180,8 +2196,6 @@ body {
 
 /* =========================================================
    RESPONSIVE / MEDIA QUERIES
-   Tutti i breakpoint del sito, raccolti qui in fondo per
-   mantenere il file ordinato. Ordine originale mantenuto.
    ========================================================= */
 
 @media (max-width: 600px) {
@@ -2359,8 +2373,7 @@ body {
     }
 
 
-    /* RITUALI: overlay scuro sullo pseudo-elemento, per
-       garantire leggibilità del testo sopra la foto */
+    /* RITUALI: overlay scuro sullo pseudo-elemento */
     .rituale-item::before {
         background-image:
             linear-gradient(
@@ -2371,60 +2384,6 @@ body {
             ),
             var(--bg);
     }
-}
-
-
-@media (max-width: 380px) {
-
-    .section-metodo {
-        padding-top: 65px;
-    }
-
-
-    .metodo-heading {
-        margin-bottom: 32px;
-    }
-
-
-    .metodo-title {
-        font-size: 39px;
-    }
-
-
-    .metodo-slider {
-        min-height: 270px;
-    }
-
-
-    .metodo-slide {
-        padding:
-            0
-            5px;
-    }
-
-
-    .metodo-slide p {
-        max-width: 300px;
-
-        font-size: 15px;
-
-        line-height: 1.7;
-    }
-
-
-    .metodo-final {
-        font-size: 21px !important;
-    }
-
-
-    .metodo-navigation {
-        margin-top: 25px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
 
     /* INTRO */
 
@@ -2526,21 +2485,104 @@ body {
         font-size: 17px;
     }
 
+
+    .rituali-disclaimer {
+        max-width: 92%;
+
+        margin-top: 22px;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+
+    .site-footer {
+        padding:
+            45px
+            15px
+            25px;
+    }
+
+    .footer-content {
+        width: 94%;
+    }
+
+    .footer-brand {
+        font-size: 19px;
+        margin-bottom: 16px;
+    }
+
+    .footer-disclaimer {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .footer-links {
+        margin-top: 19px;
+        gap: 7px;
+    }
+
+    .footer-link {
+        font-size: 8px;
+        letter-spacing: 0.13em;
+    }
+
+    .footer-copy {
+        margin-top: 15px;
+        font-size: 7px;
+    }
 }
 
 
 @media (max-width: 380px) {
+
+    .section-metodo {
+        padding-top: 65px;
+    }
+
+    .metodo-heading {
+        margin-bottom: 32px;
+    }
+
+    .metodo-title {
+        font-size: 39px;
+    }
+
+    .metodo-slider {
+        min-height: 270px;
+    }
+
+    .metodo-slide {
+        padding:
+            0
+            5px;
+    }
+
+    .metodo-slide p {
+        max-width: 300px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+    .metodo-final {
+        font-size: 21px !important;
+    }
+
+    .metodo-navigation {
+        margin-top: 25px;
+    }
 
     .rituale-item {
         min-height: 84svh;
         padding: 40px 15px;
     }
 
-
     .rituale-content {
         width: 92%;
     }
-
 
     .rituale-description {
         max-width: 295px;
@@ -2548,40 +2590,9 @@ body {
         font-size: 14.5px;
     }
 
-
     .rituale-name {
         font-size: 25px;
     }
-
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-
-    .rituale-content {
-        opacity: 1;
-
-        transform: none;
-
-        transition: none;
-    }
-
-
-    .rituale-item::before,
-    .section-cartomanzia::before {
-        transform: none !important;
-    }
-
-
-    .rituale-button,
-    .rituale-arrow {
-        transition: none;
-    }
-
-}
-
-
-@media (max-width: 380px) {
 
     .cartomanzia-content {
         width: 94%;
@@ -2633,76 +2644,6 @@ body {
     .package-button {
         font-size: 9px;
     }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .rituali-disclaimer {
-        max-width: 92%;
-
-        margin-top: 22px;
-
-        font-size: 11px;
-
-        line-height: 1.5;
-    }
-
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-
-    .rituali-disclaimer {
-        opacity: 1;
-
-        transform: none;
-
-        transition: none;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .site-footer {
-        padding:
-            45px
-            15px
-            25px;
-    }
-
-    .footer-content {
-        width: 94%;
-    }
-
-    .footer-brand {
-        font-size: 19px;
-        margin-bottom: 16px;
-    }
-
-    .footer-disclaimer {
-        font-size: 11px;
-        line-height: 1.5;
-    }
-
-    .footer-links {
-        margin-top: 19px;
-        gap: 7px;
-    }
-
-    .footer-link {
-        font-size: 8px;
-        letter-spacing: 0.13em;
-    }
-
-    .footer-copy {
-        margin-top: 15px;
-        font-size: 7px;
-    }
-
 }
 
 
@@ -2710,6 +2651,34 @@ body {
 
     html {
         scroll-behavior: auto;
+    }
+
+    .rituale-content {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .rituale-item::before,
+    .section-cartomanzia::before,
+    .section-corso::before {
+        transform: none !important;
+    }
+
+    .rituale-button,
+    .rituale-arrow {
+        transition: none;
+    }
+
+    .rituali-disclaimer {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .hero-whatsapp {
+        animation: none;
+        opacity: 1;
     }
 
     .brand,
